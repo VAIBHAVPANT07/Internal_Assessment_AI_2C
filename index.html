@@ -1,43 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <head>
-<title>Ice Cream Shop Landing Page</title>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="styles.css">
-    </head>
-    
-    <body>
-      <header class="container">
-    <!--
-        
-    
-    Create the navigation bar
-    -->>    
-  
-  </nav>
-    
-        
-        <!-- --- section two ---
-         
-        Product section with product details
-        
-        -->
-        <!-- section three 
-         
-        description of ice creams
-        
-        
-        
-        -->
+    <title>Ice Cream Shop Landing Page</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  rel="stylesheet"
+/>
 
-        
-        <!-- section four -->
-        
-        <!-- section five -->
-        
-          <!-- text area -->
-            </body>
+
+  </head>
+
+  <body style="background-color: beige;">
+
+    <header class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">eCream</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#products">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+      <div class="layout text-center mt-5">
+        <h1>Frozen Bliss, Guilt Free</h1>
+        <p>Sweet ice cream for pleasure seekers!</p>
+        <img src="/Internal_Assessment_AI_2C/img.jpg" alt="butterscotch-icecream" height="150px" width="150px" class="center">
+      </div>
+    </header>
+
+    <!-- Section Two: Product Section -->
+    <section id="products" class="container mt-5">
+      <h2 class="text-center">Our Products</h2>
+      <div class="row mt-4">
+        <div class="col-md-4 text-center">
+          <img src="/Internal_Assessment_AI_2C/vanilla.jpg" alt="" class="img-fluid rounded-circle" height="150px" width="150px">
+          <h4>Vanilla Delight</h4>
+          <p>Classic and creamy vanilla ice cream.</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="/Internal_Assessment_AI_2C/chocolate.jpg" alt="Chocolate Ice Cream" class="img-fluid rounded-circle" height="150px" width="150px">
+          <h4>Chocolate Bliss</h4>
+          <p>Rich and smooth chocolate flavor.</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="/Internal_Assessment_AI_2C/butterstoch.jpg" alt="Strawberry Ice Cream" class="img-fluid rounded-circle" height="150x" width="150px">
+          <h4>butterscotch-icecream </h4>
+          <p>Fresh and fruity strawberry ice cream.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Three: Description -->
+    <section id="about" class="bg-light py-5">
+      <div class="container">
+        <h2 class="text-center">About Us</h2>
+        <p class="text-center mt-3">At eCream, we believe in delivering joy and happiness through every scoop of ice cream. Made from the finest ingredients, our flavors are crafted with love and care to delight your taste buds.</p>
+      </div>
+    </section>
+
+    <!-- Section Four: Reviews -->
+    <section id="reviews" class="container mt-5">
+      <h2 class="text-center">Customer Reviews</h2>
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <blockquote class="blockquote">
+            <p>"The best ice cream I've ever had! The flavors are amazing."</p>
+            <footer class="blockquote-footer">John Doe</footer>
+          </blockquote>
+        </div>
+        <div class="col-md-6">
+          <blockquote class="blockquote">
+            <p>"eCream has redefined indulgence for me. Absolutely love it!"</p>
+            <footer class="blockquote-footer">Jane Smith</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Five: Contact -->
+    <section id="contact" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center">Contact Us</h2>
+        <form class="mt-4">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" rows="4" placeholder="Your message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+      <p>&copy; 2024 eCream. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT2pviz26J7c3eJi0VrsRriTwPiK1eN9/tJGxv6qfRX4p+tSA" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-6oKoVR36/Qx2NL8SMx6Km/oZ3OG5t+6Mi7C1vPThjI4G4F7kPC2EyId8cLsVx0w8" crossorigin="anonymous"></script>
+  </body>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-details">
+        <p>
+          <i class="fas fa-map-marker-alt"></i> Address, Floor 23, Jupiter
+        </p>
+        <p>
+          <i class="fas fa-phone-alt"></i> 22 (923) 3424 4156
+        </p>
+        <p>
+          <i class="fas fa-envelope"></i> eCream@domain.com
+        </p>
+      </div>
+      <div class="footer-bottom">
+        <p>Copyright © 2022 eCream</p>
+        <p>Developed by <a href="#">Thierry M.</a></p>
+        <p><a href="#">Privacy Policy</a></p>
+      </div>
+      <div class="footer-icons">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+      </div>
+    </div>
+  </footer>
+  
 </html>
+
