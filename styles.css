@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Pompiere&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ========= VARIABLES ========== */
+:root {
+  --primary-clr: #6c467a;
+  --primary-clr-alt: #d6c0e3;
+  --second-clr: #026d85;
+  --second-clr-alt: #027c97;
+  --text-clr: #f5fdff;
+  --nav-txt-clr: var(--text-clr);
+  --text-clr-bg: #f5fdff;
+  --bg-clr: #2d4253;
+  --mobile-menu-bg-clr: #3e586d;
+  --sec-two-bg-clr: var(--mobile-menu-bg-clr);
+  --form-bg-clr: #dcf1ff70;
+  --form-focus-bg-clr: #bf93cf73;
+  --gray-clr: #f5f8fa;
+  --product-bg-clr: #364f63;
+  --bx-shadow-clr: #6d477b33;
+}
+
+/* ======== White Theme ======== */
+.lightmode {
+  --primary-clr-alt: #6c467a;
+  --second-clr-alt: #027c97;
+  --form-bg-clr: #a67eb43a;
+  --form-focus-bg-clr: #107a9231;
+  --sec-two-bg-clr: #f5fdff;
+  --text-clr: #2d4253;
+  --nav-txt-clr: var(--second-clr);
+  --bg-clr: #f5fdff;
+  --product-bg-clr: #f5fdff;
+  --bx-shadow-clr: #2d425333;
+}
+
+/* ------------ BASE ------------ */
+body {
+  }
+
+ul {
+  }
+img {
+  
+}
+.pos-abs-center {
+  }
+.s-definition {
+  
+/* -- transitions -- */
+.clr-transition {
+}
+.bg-clr__transition {
+ }
+/* ================= */
+
+
+/* -- buttons -- */
+.button {
+}
+.btn-primary {
+  background-color: var(--primary-clr);
+}
+.btn-second-alt {
+  background-color: transparent;
+  border: thin solid var(--text-clr);
+  color: var(--text-clr);
+}
+/* ================= */
+
+.container {
+  padding: 1.8rem 3rem;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+}
+@media screen and (min-width: 3000px) {
+  .container {
+    padding: 1.8rem 500px;
+  }
+}
+
+/* ------------------------- */
+
+/* -------- HEADER -------- */
+header {
+}
+.logo {
+}
+.nav-items {
+}
+.nav-item {
+  margin-right: 3rem;
+}
+.nav-item:last-child {
+  margin-right: 0;
+}
+
+/* -------- SECTION ONE: Hero section -------- */
+/* -------- SECTION TWO: Product section -------- */
+/* ----- section three: Ad products section ----- */
+
+/* ----- section five: promo section ----- */
+/* ----- footer section ----- */
+/* ---- contact form ---- */
