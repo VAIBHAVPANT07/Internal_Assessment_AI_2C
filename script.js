@@ -1,51 +1,53 @@
-/* ----- BASE ------ */
 "use strict";
 
-// get required selectors to maniplute menu toggle
+/* ----- BASE ------ */
+
+// Get required selectors to manipulate menu toggle
 const navbar = document.querySelector(".navbar");
 const menuTogglersContainer = document.querySelector(".menu-togglers");
 const bxMenu = document.querySelector(".bx-menu");
 
-/* -- show/hide menu -- */
+/* -- Show/Hide Menu -- */
 menuTogglersContainer.addEventListener("click", () => {
-  // if navbar tag have show-nav in as class
+  // Toggle the 'show-nav' class on the navbar
   navbar.classList.toggle("show-nav");
 });
 
 /* ================================================ */
 
-/* -------- theme changing -------- */
+/* -------- Theme Changing -------- */
 const themeTogglers = document.querySelector(".theme-togglers");
 const lightIcon = document.querySelector(".bxs-sun");
 const darkIcon = document.querySelector(".bxs-moon");
 
-var lightmode = localStorage.getItem("lightmode");
+let lightmode = localStorage.getItem("lightmode");
 
-// enable dark mode function
+// Enable Light Mode
 const enableLightMode = () => {
-  // add class dark mode to the body
+  // Add 'lightmode' class to the body
   document.body.classList.add("lightmode");
   localStorage.setItem("lightmode", "enabled");
-  // change theme toggle styles
+  // Update theme toggle icons
   lightIcon.style.display = "none";
   darkIcon.style.display = "block";
 };
 
+// Check and enable light mode if previously enabled
 if (lightmode && lightmode === "enabled") {
   enableLightMode();
 }
 
-// disable dark mode function
+// Disable Light Mode
 const disableLightMode = () => {
-  // remove class dark mode from the body
+  // Remove 'lightmode' class from the body
   document.body.classList.remove("lightmode");
   localStorage.setItem("lightmode", null);
-  // change theme toggle styles
+  // Update theme toggle icons
   lightIcon.style.display = "block";
   darkIcon.style.display = "none";
 };
 
-// active/deactive dark mode
+// Toggle Light/Dark Mode on click
 themeTogglers.addEventListener("click", () => {
   lightmode = localStorage.getItem("lightmode");
   if (!lightmode || lightmode !== "enabled") {
@@ -55,12 +57,9 @@ themeTogglers.addEventListener("click", () => {
   }
 });
 
-
-/* -- hide show hero buttons -- */
-// delay before showing them
+/* -- Show Hero Buttons with Delay -- */
 const heroButtonsContainer = document.querySelector(".hero-btns-container");
-
-var delayTime = 1000;
+const delayTime = 1000;
 
 heroButtonsContainer.style.transition = "opacity 1000ms";
 
@@ -68,7 +67,7 @@ setTimeout(() => {
   heroButtonsContainer.style.opacity = 1;
 }, delayTime);
 
-// --- prevent form submission on contact section ---
+/* --- Prevent Form Submission on Contact Section --- */
 const sendMsgButton = document.querySelector(".send-msg-btn");
 sendMsgButton.addEventListener("click", (e) => {
   e.preventDefault();
